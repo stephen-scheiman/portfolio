@@ -5,7 +5,7 @@
 }
 /* Set variables for the page */
 :root {
-  --color: grey;
+  --color: rgb(222, 21, 21);
 }
 
 header {
@@ -18,8 +18,8 @@ header {
 }
 
 #header-image {
-  background-image: url("tahoe_header.gif");
-  display: inline;
+  /* background-image: url("tahoe_header.gif"); */
+  display: block;
   height: 100px;
   width: 100%;
   opacity: .5;
@@ -29,11 +29,7 @@ header {
   display: inline-flex;
   position: absolute;
   right: 5px;
-  justify-content: center;
   align-content: center;
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
   padding: 0;
   margin: 0;
 }
@@ -41,36 +37,37 @@ header {
 a {
   color: var(--color);
   margin: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 140%;
 }
 
 body {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   position: absolute;
   margin: 0;
   padding: 0;
-  background-color: bisque;
+  background-image: url("../images/tahoe_header.gif");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 h1 {
+  display: inline;
+  position: fixed;
   color: var(--color);
   margin-left: 5px;
-  position: relative;
-  top: 25px;
-  font-family: cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 #about-me {
-  display: block;
+  display: inline-flex;
+  text-wrap: wrap;
   position: relative;
   top: 110px;
   margin: 5px;
-}
-
-.body-text {
-  display: flex;
-  position: relative;
-  top: 10px;
 }
 
 .contact-box {
@@ -105,20 +102,20 @@ h1 {
 
 .portfolio-card {
   display: flex;
+  flex: 1 1 400px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   border-radius: 10px;
   border-style: dashed;
   border-color: var(--white);
   height: 350px;
-  width: 400px;
   padding: 5px;
   padding-bottom: 10px;
   margin: 20px;
 }
 
 #main-portfolio-card {
- width:1275px;  
+ flex: 1 1 800px;  
 }
 
 input[type="submit"] {
