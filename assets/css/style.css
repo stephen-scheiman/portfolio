@@ -5,7 +5,7 @@
 }
 /* Set variables for the page */
 :root {
-  --color: rgb(212, 22, 22);
+  --color: grey;
 }
 
 header {
@@ -53,9 +53,11 @@ body {
 }
 
 h1 {
+  color: var(--color);
   margin-left: 5px;
   position: relative;
-  top: 100px;
+  top: 25px;
+  font-family: cursive;
 }
 
 #about-me {
