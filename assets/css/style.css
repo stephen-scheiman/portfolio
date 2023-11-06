@@ -20,14 +20,7 @@ header {
   background-position: center;
 }
 
-#header-image {
-  background-image: url("../images/tahoe_header.gif");
-  background-size: cover;
-  background-position: center;
-  display: inline;
-  height: 100px;
-  width: 100%;
-}
+
 /* Configure the text in the header as inline flex */
 .header-text {
   display: flex;
@@ -43,6 +36,7 @@ a {
   margin: 5px;
   font-family: "Dancing Script", cursive;
   font-size: 140%;
+  text-decoration: none;
 }
 
 body {
@@ -65,15 +59,25 @@ h1 {
   margin-left: 5px;
   font-family: "Dancing Script", cursive;
 }
+p {
+  margin-left:10px;
+}
+
+p span {
+  font-style: italic;
+  font-size: 200%;
+}
 
 #about-me {
   display: flex;
   text-wrap: wrap;
   position: relative;
   top: 275px;
-  left: 275px;
   margin: 5px;
-  width: 80%;
+}
+
+#about-me-pic {
+  height: 100px;
 }
 
 #portfolio-box {
@@ -112,6 +116,14 @@ main {
   padding: 5px;
   padding-bottom: 10px;
   margin: 20px;
+}
+
+#main-portfolio-card-header {
+  display: block;
+  justify-content: center;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+  margin-top: 0px;
 }
 
 #main-portfolio-card {
@@ -162,4 +174,12 @@ footer {
   bottom: 0;
   border-top: 10px solid rgb(9, 96, 70);
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
 }
