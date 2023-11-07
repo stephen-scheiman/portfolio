@@ -20,7 +20,6 @@ header {
   background-position: center;
 }
 
-
 /* Configure the text in the header as inline flex */
 .header-text {
   display: flex;
@@ -43,7 +42,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-wrap: wrap;
-  position: absolute;
   margin: 0;
   padding: 0;
   /*background-image: url("../images/tahoe_header.gif");
@@ -65,7 +63,7 @@ h2 {
 }
 
 p {
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 p span {
@@ -78,20 +76,26 @@ p span {
   text-wrap: wrap;
   position: relative;
   top: 275px;
-  margin: 5px;
+  margin: 15px;
+  border-left: 2px solid red;
 }
 
 #about-me-pic {
+  display: flex;
   height: auto;
   max-height: 150px;
 }
 
 #portfolio-box {
+  position: relative;
+  top: 650px;
   display: flex;
   flex-wrap: wrap;
-flex-direction: column;
-  position: relative;
-  top: 17rem;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  justify-content: center;
+  border-left: 2px solid red;
 }
 
 main {
@@ -100,17 +104,27 @@ main {
   z-index: -1;
 }
 
-.portfolio-card {
+/* .portfolio-card {
   display: flex;
-  flex: 1 1 600px;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
   border-radius: 10px;
   border-style: dashed;
-  border-color: var(--white);
+  border-color: var(--color);
   padding: 0.5rem;
   margin: 5px;
   width: auto;
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+} */
+
+.portfolio-card {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+  border: 2px solid var(--color)
 }
 
 .portfolio-card-header {
@@ -174,7 +188,6 @@ footer {
   border-top: 10px solid rgb(9, 96, 70);
   text-align: center;
 }
-
 
 @media screen and (max-width: 768px) {
   main,

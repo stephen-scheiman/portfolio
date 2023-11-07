@@ -18,43 +18,39 @@
 
   <body>
     <header>
-      <div>
         <ul class="header-text">
           <li><a href="https://github.com/stephen-scheiman">github</a></li>
           <li><a href="#portfolio-box">portfolio</a></li>
           <li><a href="#contact-box">contact</a></li>
         </ul>
-      </div>
+      <section id="about-me">
+        <h2>About Me</h2>
+      <!-- <img id="about-me-pic" src="./assets/images/me.gif"> -->
+        <p>
+          <span>I'm baby activated charcoal</span> fixie craft beer vaporware hoodie kale chips raclette, heirloom literally iceland hot chicken. Selfies street art vape hexagon fashion axe palo santo gastropub fit mlkshk quinoa. Pug photo booth chillwave humblebrag, +1 plaid farm-to-table poutine vexillologist. Literally lyft post-ironic neutra craft beer etsy tilde adaptogen four loko hell of schlitz sus. Knausgaard JOMO raw denim, lo-fi tousled pork belly kickstarter venmo gastropub truffaut poke small batch vexillologist. Ascot fanny pack neutra, cornhole normcore lumbersexual bicycle rights ethical snackwave.
+          Pinterest sriracha woke taiyaki, pabst scenester authentic direct trade VHS pok pok activated charcoal 90's gatekeep. Everyday carry meggings lomo YOLO. Marxism twee hell of taiyaki, roof party drinking vinegar schlitz. Green juice truffaut normcore readymade cupping vaporware shoreditch bruh whatever everyday carry.
+        </p>
+      </section>
     </header>
 
-    <h1>Stephen Scheiman</h1>
-
-    <section id="about-me">
-      <h2>About Me</h2>
-      <img id="about-me-pic" src="./assets/images/me.gif">
-      <p>
-        <span>I'm baby activated charcoal</span> fixie craft beer vaporware hoodie kale chips raclette, heirloom literally iceland hot chicken. Selfies street art vape hexagon fashion axe palo santo gastropub fit mlkshk quinoa. Pug photo booth chillwave humblebrag, +1 plaid farm-to-table poutine vexillologist. Literally lyft post-ironic neutra craft beer etsy tilde adaptogen four loko hell of schlitz sus. Knausgaard JOMO raw denim, lo-fi tousled pork belly kickstarter venmo gastropub truffaut poke small batch vexillologist. Ascot fanny pack neutra, cornhole normcore lumbersexual bicycle rights ethical snackwave.
-        Pinterest sriracha woke taiyaki, pabst scenester authentic direct trade VHS pok pok activated charcoal 90's gatekeep. Everyday carry meggings lomo YOLO. Marxism twee hell of taiyaki, roof party drinking vinegar schlitz. Green juice truffaut normcore readymade cupping vaporware shoreditch bruh whatever everyday carry.
-      </p>
-    </section>
-
-
+  <h1>Stephen Scheiman</h1>
+  
     <main>
+      <h2>My Work</h2>
       <section id="portfolio-box">
-        <h2>My Work</h2>
-        <section class="portfolio-card" id="main-portfolio-card">
-          <iframe src="https://stephen-scheiman.github.io/bootcamp-challenge-02/">
-          </iframe>
-          <h2 class="portfolio-card-header">Horiseon SEO Refactor Project</h2>
+        <section class="portfolio-card">
+          <!-- <iframe src="https://stephen-scheiman.github.io/bootcamp-challenge-02/">
+          </iframe> -->
+        <!-- <h2 class="portfolio-card-header">Horiseon SEO Refactor Project</h2> -->
         </section>
         <section class="portfolio-card"></section>
-        <h2 class="portfolio-card-header">Coming Soon</h2>
+        <!-- <h2 class="portfolio-card-header">Coming Soon</h2> -->
         <section class="portfolio-card"></section>
-        <h2 class="portfolio-card-header">Coming Soon</h2>
+        <!-- <h2 class="portfolio-card-header">Coming Soon</h2> -->
         <section class="portfolio-card"></section>
-        <h2 class="portfolio-card-header">Coming Soon</h2>
+        <!-- <h2 class="portfolio-card-header">Coming Soon</h2> -->
         <section class="portfolio-card"></section>
-        <h2 class="portfolio-card-header">Coming Soon</h2>
+        <!-- <h2 class="portfolio-card-header">Coming Soon</h2> -->
       </section>
       </main>
 
