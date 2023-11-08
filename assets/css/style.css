@@ -193,3 +193,30 @@ borrowed from student project */
   box-shadow: inset 0px 0px 8px red, 0 0 15px grey;
   outline: 2px dashed var(--gin);
 }
+
+/* The below is shamelessly pilfered from student mini-project */
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .portfolio-body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* select the first child to grow to full width if it has space to grow */
+  .portfolio-body:first-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+  }
+
+  .portfolio-body {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
