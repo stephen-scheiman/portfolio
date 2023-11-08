@@ -95,6 +95,7 @@ nav ul {
   right: -80rem;
   top: 11rem;
 }
+
 /* change the default appearance of links */
 li a {
   color: var(--header-text-color);
@@ -157,7 +158,7 @@ footer {
   width: 90%;
   height: 30rem;
 }
- /* format links in the contact section*/
+/* format links in the contact section*/
 div p a {
   margin-left: 5rem;
   color: white;
