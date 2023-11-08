@@ -1,8 +1,6 @@
 /* color scheme sourced from http://khroma.co/generator/ */
 :root {
-  --outer-space: #33393f;
-  --bright-turquoise: #2aefcb;
-  --gin: #0a0a96;
+  --body: rgb(201, 199, 199);
   --headline-text: red;
   --header-text-color: white;
 }
@@ -19,10 +17,12 @@ body {
   /*in combination with the above font-size, set the standard font size to 17.5 px */
   font-size: 1.75rem;
   line-height: 1.5;
-  color: blue;
-  background-color: beige;
+  color: var(--header-text-color);
+  background-color: var(--body);
+  min-height: 125rem;
 }
 
+/* header settings borrowed from student project */
 h1,
 h2,
 h3,
@@ -30,7 +30,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.625rem;
-  color: var(--headline-text);
+  color: var(--header-text-color);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -39,7 +39,7 @@ h1 {
   /* 4rem = 40px (4 * 10px) */
   font-size: 4rem;
 }
-
+/* offset section headers so they align with vertical bars */
 h2 {
   font-size: 3.5rem;
   margin-bottom: -3rem;
@@ -63,11 +63,11 @@ h6 {
 /* create the vertical bar for parapgraphs */
 p {
   margin-bottom: 4rem;
-  border-left: 0.5rem solid red;
+  border-left: 0.5rem solid var(--header-text-color);
   margin-left: 20rem;
   padding-left: 1rem;
 }
-
+/* page header layout and background image */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -78,14 +78,14 @@ header {
   background-size: cover;
   background-position: center;
 }
-/* h1 properties */
+/* header h1 properties */
 header h1 {
   margin-left: 1rem;
   font-family: "Dancing Script", cursive;
   font-size: 4.5rem;
 }
 
-/* Configure the text in the header as flex */
+/* Configure the nav bar in the header as flex */
 header ul {
   display: flex;
   flex: 1 1 10rem;
@@ -95,7 +95,7 @@ header ul {
   right: -75rem;
   top: 11rem;
 }
-
+/* change the default appearance of links */
 li a {
   color: var(--header-text-color);
   margin: 5px;
@@ -103,9 +103,13 @@ li a {
   font-size: 140%;
   text-decoration: none;
 }
+/* make link text larger on hover */
+li a:hover {
+  font-size: 150%;
+}
 
 footer {
-  margin: 0rem;
+  margin-top: 5rem;
 }
 /* set properties for the main display box */
 .portfolio-body {
@@ -113,31 +117,11 @@ footer {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0;
-  border-left: 0.5rem solid red;
+  border-left: 0.5rem solid var(--header-text-color);
   margin-left: 20rem;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.portfolio-card {
-  display: flex;
-  height: 20rem;
-  width: 52rem;
-  color: black;
-  margin: 1.5rem;
-  outline: 2px dashed var(--gin);
-  outline-offset: -2px;
-  transition: all 0.5s ease-in-out;
-  padding: 0.5rem;
-}
-
-#main {
-  width: 90%;
-  height: 30rem;
-}
-
+/* properties for card headers, currently broken */
 .card-header {
   position: relative;
   color: rgb(223, 18, 18);
@@ -148,11 +132,43 @@ footer {
   text-align: center;
 }
 
-#contact {
-  margin-left: 0rem;
+/* set the properties for each portfolio item display box */
+.portfolio-card {
+  display: flex;
+  height: 20rem;
+  width: 52rem;
+  color: black;
+  margin: 1.5rem;
+  /* below borrowed from student project */
+  outline: 2px dashed var(--gin);
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+  padding: 0.5rem;
+}
+/* main card should be significantly bigger than the rest */
+#main {
+  width: 90%;
+  height: 30rem;
+}
+ /* format links in the contact section*/
+div p a {
+  margin-left: 5rem;
+  color: white;
+  text-decoration: none;
+}
+/* magic font size thingy */
+div p a:hover {
+  font-size: 150%;
+}
+/* style the text in the contact section */
+div p {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 140%;
 }
 
-/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+/* set an outer and inner drop shadow on the card to create a glowing effect on hover 
+borrowed from student project */
 .portfolio-card:hover,
 .portfolio-card:hover .card-header {
   box-shadow: inset 0px 0px 8px red, 0 0 15px grey;
