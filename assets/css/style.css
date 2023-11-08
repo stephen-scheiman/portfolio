@@ -182,6 +182,8 @@ div p {
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 140%;
+  border-left: .5rem solid white;
+  margin-left: 20rem;
 }
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover 
