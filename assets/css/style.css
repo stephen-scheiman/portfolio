@@ -60,13 +60,7 @@ h5 {
 h6 {
   font-size: 1.5rem;
 }
-/* create the vertical bar for parapgraphs */
-p {
-  margin-bottom: 4rem;
-  border-left: 0.5rem solid var(--header-text-color);
-  margin-left: 20rem;
-  padding-left: 1rem;
-}
+
 /* page header layout and background image */
 header {
   display: flex;
@@ -109,15 +103,30 @@ li a:hover {
   font-size: 150%;
 }
 
-footer {
-  margin-top: 5rem;
+/* create the vertical bar for parapgraphs */
+#body-text {
+  margin-bottom: 4rem;
+  border-left: 0.5rem solid var(--header-text-color);
+  margin-left: 20rem;
+  padding-left: 1rem;
 }
+
+/* section > img {
+  display: inline-block;
+  position: relative;
+  top: 5rem;
+  width: 5%;
+  margin-top: 0;
+  margin-right: 0.5rem;
+} */
+
 /* set properties for the main display box */
 .portfolio-body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 0;
+  margin-left: 0.25rem;
+  /*draws vertical bar to the left*/
   border-left: 0.5rem solid var(--header-text-color);
   margin-left: 20rem;
 }
@@ -148,15 +157,15 @@ footer {
   transition: all 0.5s ease-in-out;
   padding: 0.5rem;
 }
-/* Need to figure out how to link the iframe so that when it is click it navigates to the content page
-.portfolio-card:active {
-
-}*/
 
 /* main card should be significantly bigger than the rest */
-#main {
-  width: 90%;
+#main-card {
+  width: 69%;
   height: 30rem;
+}
+
+footer {
+  margin-top: 5rem;
 }
 /* format links in the contact section*/
 div p a {
@@ -174,6 +183,7 @@ div p {
   font-family: "Dancing Script", cursive;
   font-size: 140%;
 }
+
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover 
 borrowed from student project */
 .portfolio-card:hover,
