@@ -18,7 +18,7 @@
 
   <body>
     <header>
-        <ul class="header-text">
+        <ul>
           <li><a href="https://github.com/stephen-scheiman">github</a></li>
           <li><a href="#portfolio-box">portfolio</a></li>
           <li><a href="#contact-box">contact</a></li>
