@@ -86,7 +86,7 @@ header h1 {
 }
 
 /* Configure the nav bar in the header as flex */
-header ul {
+nav ul {
   display: flex;
   flex: 1 1 10rem;
   text-wrap: wrap;
