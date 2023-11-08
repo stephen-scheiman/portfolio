@@ -92,7 +92,7 @@ header ul {
   text-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-  right: -75rem;
+  right: -80rem;
   top: 11rem;
 }
 /* change the default appearance of links */
@@ -124,8 +124,10 @@ footer {
 /* properties for card headers, currently broken */
 .card-header {
   position: relative;
-  color: rgb(223, 18, 18);
-  border: 2px solid black;
+  top: -7rem;
+  left: 3rem;
+  color: grey;
+  border: 2px solid grey;
   border-radius: 8px;
   height: 5rem;
   width: 15rem;
@@ -145,6 +147,11 @@ footer {
   transition: all 0.5s ease-in-out;
   padding: 0.5rem;
 }
+/* Need to figure out how to link the iframe so that when it is click it navigates to the content page
+.portfolio-card:active {
+
+}*/
+
 /* main card should be significantly bigger than the rest */
 #main {
   width: 90%;
@@ -166,10 +173,10 @@ div p {
   font-family: "Dancing Script", cursive;
   font-size: 140%;
 }
-
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover 
 borrowed from student project */
 .portfolio-card:hover,
 .portfolio-card:hover .card-header {
   box-shadow: inset 0px 0px 8px red, 0 0 15px grey;
+  outline: 2px dashed var(--gin);
 }
