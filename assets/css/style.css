@@ -17,9 +17,9 @@ body {
   line-height: 1.5;
   color: var(--header-text-color);
   background-color: var(--body);
-  min-height: 127rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  min-height: 130rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* header settings borrowed from student project */
@@ -101,10 +101,10 @@ li a:hover {
 }
 
 #me {
-display: inline;
-max-width: 10rem;
-max-height: 13rem;
-margin-right: .5rem;
+  display: inline;
+  max-width: 10rem;
+  max-height: 13rem;
+  margin-right: 0.5rem;
 }
 
 /* create the vertical bar for parapgraphs */
@@ -127,19 +127,28 @@ margin-right: .5rem;
   margin-left: 20rem;
   margin-bottom: 10rem;
 }
-
-/* properties for card headers, currently broken */
-.card-header {
+/* main card should be significantly bigger than the rest */
+#main-card {
+  width: 75%;
+  height: 30rem;
   position: relative;
+  top: -3rem;
+}
+/* properties for card headers, currently broken */
+#main-card-header {
+  position: relative;
+  display: inline;
   left: 1rem;
-  top: 31rem;
+  top: 1rem;
   color: white;
+  background-color: grey;
   font-weight: 500;
   border: 2px solid grey;
-  height: auto;
+  height: 3rem;
   width: 25rem;
   text-align: center;
   border-radius: 0.5rem;
+  z-index: +1;
 }
 
 /* set the properties for each portfolio item display box */
@@ -153,12 +162,6 @@ margin-right: .5rem;
   padding: 0.5rem;
   border: 0.25rem solid grey;
   border-radius: 0.5rem;
-}
-
-/* main card should be significantly bigger than the rest */
-#main-card {
-  width: 75%;
-  height: 30rem;
 }
 
 footer {
@@ -188,31 +191,4 @@ borrowed from student project */
 .portfolio-card:hover .card-header {
   box-shadow: inset 0px 0px 8px red, 0 0 15px grey;
   outline: 2px dashed grey;
-}
-
-/* The below is shamelessly pilfered from student mini-project */
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
-  .portfolio-body {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  /* select the first child to grow to full width if it has space to grow */
-  .portfolio-body:first-child {
-    flex-grow: 1;
-  }
-}
-
-/* media query for larger screens */
-@media screen and (min-width: 992px) {
-  header {
-    width: 100%;
-  }
-
-  .portfolio-body {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
 }
