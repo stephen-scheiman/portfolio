@@ -43,6 +43,7 @@ h1 {
 h2 {
   font-size: 3.5rem;
   margin-bottom: -3rem;
+  margin-right: 1rem;
 }
 
 h3 {
@@ -82,16 +83,14 @@ header h1 {
 /* Configure the nav bar in the header as flex */
 nav ul {
   display: flex;
-  flex: 1 1 10rem;
-  text-wrap: wrap;
   flex-wrap: wrap;
-  position: relative;
-  right: -80rem;
-  top: 11rem;
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
 }
 
 /* change the default appearance of links */
-li a {
+li > a {
   color: var(--header-text-color);
   margin: 5px;
   font-family: "Dancing Script", cursive;
@@ -111,15 +110,6 @@ li a:hover {
   padding-left: 1rem;
 }
 
-/* section > img {
-  display: inline-block;
-  position: relative;
-  top: 5rem;
-  width: 5%;
-  margin-top: 0;
-  margin-right: 0.5rem;
-} */
-
 /* set properties for the main display box */
 .portfolio-body {
   display: flex;
@@ -134,14 +124,15 @@ li a:hover {
 /* properties for card headers, currently broken */
 .card-header {
   position: relative;
-  top: -7rem;
-  left: 3rem;
-  color: grey;
+  top: -8.5rem;
+  left: 1.5rem;
+  color: blue;
   border: 2px solid grey;
-  border-radius: 8px;
-  height: 5rem;
-  width: 15rem;
+  height: auto;
+  width: 35rem;
   text-align: center;
+  border-radius: 0.5rem;
+  text-decoration: none;
 }
 
 /* set the properties for each portfolio item display box */
@@ -149,13 +140,15 @@ li a:hover {
   display: flex;
   height: 20rem;
   width: 52rem;
-  color: black;
-  margin: 1.5rem;
+  margin: 1rem;
+
   /* below borrowed from student project */
   outline: 2px dashed var(--gin);
   outline-offset: -2px;
   transition: all 0.5s ease-in-out;
   padding: 0.5rem;
+  border: 0.25rem solid grey;
+  border-radius: 0.5rem;
 }
 
 /* main card should be significantly bigger than the rest */
@@ -182,7 +175,7 @@ div p {
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-size: 140%;
-  border-left: .5rem solid white;
+  border-left: 0.5rem solid white;
   margin-left: 20rem;
 }
 
