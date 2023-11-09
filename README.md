@@ -25,9 +25,10 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 ## Screen Shot
-
+./assets/images/screenshot.png
 
 ## Application URL
-
+https://stephen-scheiman.github.io/portfolio/
 
 ## Application Repo
+https://github.com/stephen-scheiman/portfolio
